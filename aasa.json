@@ -1,0 +1,10 @@
+{
+  "applinks": {
+      "details": [
+           {
+             "appIDs": [ "AVUQPCCU7T.com.spoton.FlexQA"],
+		 “paths”: [“*”]
+           }
+       ]
+   }
+}
