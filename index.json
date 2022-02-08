@@ -3,7 +3,7 @@
       "details": [
            {
              "appIDs": [ "AVUQPCCU7T.com.spoton.FlexQA"],
-		 "paths": ["/oauth2redirect"]
+		 "paths": ["*"]
            }
        ]
    }
