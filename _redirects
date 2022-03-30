@@ -1,4 +1,4 @@
-/gemini    index.json   200
-/ index.json 200
-/apple-app-site-association index.json 200
-/.well-known/apple-app-site-association index.json 200
+/gemini    /index.json   200
+/ /index.json 200
+/apple-app-site-association /index.json 200
+/.well-known/apple-app-site-association /index.json 200
