@@ -1,8 +1,37 @@
 <html>
-  <body>
-    Sample page
-  </body>
+  <body></body>
   <script>
-    window.location = 'itms-apps://itunes.apple.com/us/app/id1588427991'
+    const OS_TYPES = {
+      UNKNOWN: 0,
+      WINDOWS: 1,
+      IOS: 2,
+      ANDROID: 3,
+    };
+
+    function getMobileOperatingSystem() {
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      if (/windows phone/i.test(userAgent)) {
+        return OS_TYPES.WINDOWS;
+      }
+
+      if (/android/i.test(userAgent)) {
+        return OS_TYPES.ANDROID;
+      }
+
+      if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        return OS_TYPES.IOS;
+      }
+
+      return OS_TYPES.UNKNOWN;
+    }
+
+    window.onload = () => {
+      const osType = getMobileOperatingSystem();
+
+      if (osType === OS_TYPES.IOS) {
+        window.location = "itms-apps://itunes.apple.com/us/app/id1588427991";
+      }
+    };
   </script>
 </html>
