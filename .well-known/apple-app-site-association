@@ -1,11 +1,17 @@
 {
   "applinks": {
-	"apps": [],
-      "details": [
-           {
-             "appIDs": [ "AVUQPCCU7T.com.spoton.FlexQA"],
-		 "paths": ["*"]
-           }
-       ]
-   }
+    "apps": [],
+    "details": [
+      {
+        "appIDs": [
+          "AVUQPCCU7T.com.spoton.FlexQA",
+          "AVUQPCCU7T.com.spoton.Flex",
+          "TN8SL8FJ76.com.tokentech.editor"
+        ],
+        "paths": [
+          "*"
+        ]
+      }
+    ]
+  }
 }
