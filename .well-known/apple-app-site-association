@@ -6,7 +6,8 @@
         "appIDs": [
           "AVUQPCCU7T.com.spoton.wallet",
           "AVUQPCCU7T.com.spoton.wallet.dev",
-          "AVUQPCCU7T.com.spoton.wallet.uat"
+          "AVUQPCCU7T.com.spoton.wallet.uat",
+          "AVUQPCCU7T.com.spoton.ewa.dev"
         ],
         "paths": [
           "*"
@@ -16,7 +17,8 @@
   },
   "appclips": {
     "apps": [
-      "AVUQPCCU7T.com.spoton.wallet.uat.appclip"
+      "AVUQPCCU7T.com.spoton.wallet.uat.appclip",
+      "AVUQPCCU7T.com.spoton.ewa.dev.SpotonEWA.Clip"
     ]
   }
 }
