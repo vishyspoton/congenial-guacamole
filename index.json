@@ -4,14 +4,23 @@
     "details": [
       {
         "appIDs": [
-          "AVUQPCCU7T.com.spoton.FlexQA",
-          "AVUQPCCU7T.com.spoton.Flex",
-          "TN8SL8FJ76.com.tokentech.editor"
+          "AVUQPCCU7T.com.spoton.wallet",
+          "AVUQPCCU7T.com.spoton.wallet.dev",
+          "AVUQPCCU7T.com.spoton.wallet.uat",
+          "AVUQPCCU7T.com.spoton.ewa.dev",
+          "AVUQPCCU7T.com.spoton.ewa.stage"
         ],
         "paths": [
           "*"
         ]
       }
+    ]
+  },
+  "appclips": {
+    "apps": [
+      "AVUQPCCU7T.com.spoton.wallet.uat.appclip",
+      "AVUQPCCU7T.com.spoton.ewa.dev.SpotonEWA.Clip",
+      "AVUQPCCU7T.com.spoton.ewa.stage.ewaStageClip"
     ]
   }
 }
