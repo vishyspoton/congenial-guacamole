@@ -1,9 +1,11 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "com.spoton.flex.demo",
-    "sha256_cert_fingerprints":
- ["EB:24:81:74:99:80:B1:F9:36:2B:FE:E7:5B:39:32:A6:A5:39:AE:76:C1:61:37:37:3C:F4:44:06:39:10:21:2D"]
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.spoton.ewa",
+      "sha256_cert_fingerprints":
+        ["10:03:61:D5:0C:f5:5F:69:B3:57:15:A9:F3:95:EE:A0:76:EE:0F:69:78:80:19:13:7D:aa:06:9F:78:1F:42:BE"]
+    }
   }
-}]
+]
