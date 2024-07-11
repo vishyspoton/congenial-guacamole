@@ -1,6 +1,8 @@
 <html>
   <body></body>
+  <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.5/mobile-detect.min.js"></script>
   <script>
+    var md = new MobileDetect(window.navigator.userAgent);
     const OS_TYPES = {
       UNKNOWN: 0,
       WINDOWS: 1,
@@ -9,21 +11,13 @@
     };
 
     function getMobileOperatingSystem() {
-      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      const isIphone = md.is("iPhone") || md.is("iPad") || md.is("iPod");
 
-      if (/windows phone/i.test(userAgent)) {
-        return OS_TYPES.WINDOWS;
-      }
-
-      if (/android/i.test(userAgent)) {
-        return OS_TYPES.ANDROID;
-      }
-
-      if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+      if (isIphone) {
         return OS_TYPES.IOS;
       }
 
-      return OS_TYPES.UNKNOWN;
+      return OS_TYPES.ANDROID;
     }
 
     window.onload = () => {
@@ -32,7 +26,8 @@
       if (osType === OS_TYPES.IOS) {
         window.location = "itms-apps://itunes.apple.com/us/app/id1588427991";
       } else if (osType === OS_TYPES.ANDROID) {
-        window.location = "https://play.google.com/store/apps/details?id=com.dynamiclink.test.loginapplication";
+        window.location =
+          "https://play.google.com/store/apps/details?id=com.dynamiclink.test.loginapplication";
       }
     };
   </script>
